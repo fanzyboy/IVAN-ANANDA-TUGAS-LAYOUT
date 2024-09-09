@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/main"
+    tools:context=".pagerelativelayout">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="reminder" />
+
+        <Spinner
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dates"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/times"/>
+
+        <Spinner
+
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/times"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentRight="true"
+            />
+
+
+        <Button
+
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/times"
+            android:layout_alignParentRight="true"
+            android:text="DONES" />
+
+
+        <TableRow
+             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+        </TableRow>
+
+
+
+
+
+</TableLayout>
+
+
+    </RelativeLayout>
